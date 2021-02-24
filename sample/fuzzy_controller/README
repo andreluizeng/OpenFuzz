@@ -1,0 +1,19 @@
+Temperature Control sample application
+
+Makefile set to i.MX8 (NXP) processor (Yocto toolchain)
+
+
+
+Build:
+
+ $ source /opt/fsl-imx-xwayland/5.4-zeus/environment-setup-aarch64-poky-linux 
+ $ make
+ 
+
+binary will be placed in /bin folder.
+
+
+Contact:
+	
+	Andre Silva
+	andreluizeng@yahoo.com.br

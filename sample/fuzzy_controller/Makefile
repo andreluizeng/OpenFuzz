@@ -1,0 +1,25 @@
+SRCDIR		= src
+CD		= cd
+MAKE		= make
+APPNAME	= fuzzy_controller
+
+export APPNAME
+
+all: $(APPNAME)
+
+$(APPNAME): 
+				$(CD) $(SRCDIR); \
+				$(MAKE) -f Makefile distclean; \
+				$(MAKE) -f Makefile install;
+
+
+clean:
+
+	$(CD) $(SRCDIR); \
+	$(MAKE) -f Makefile clean; 
+	
+distclean: clean
+
+	$(CD) $(SRCDIR); \
+	$(MAKE) -f Makefile distclean; 
+	
